@@ -1,0 +1,22 @@
+<div id="main-div">
+    <div class="title">
+        <img src="assets/angular-analytics.png" alt="Imagem titulo angular+analytics">
+        <h1>Integração Angular e Google Analytics!</h1>
+        <p>
+            O objetivo desse projeto é criar uma aplicação genérica em angular e integrá-la com a ferramenta Google
+            Analytics.
+            Esta ferramenta nos permite obter diversas informações sobre a utilização do seu site, por exemplo: Numero
+            de acessos, Quantidade de acessos em páginas especificas,
+            Ações do usuário dentro da aplicação, Visitantes que retornam ao site, etc.
+        </p>
+    </div>
+    <h2>Páginas</h2>
+    <div class="pages">
+        <a class="card" *ngFor="let card of paginas" [routerLink]="card.rota">
+            <img [src]="card.imagem" alt="imagem da rota">
+            <div class="data">
+                <h3 class="route-title">{{card.tituloRota}}</h3>
+            </div>
+        </a>
+    </div>
+</div>

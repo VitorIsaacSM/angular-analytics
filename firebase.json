@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/angular-analytics",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

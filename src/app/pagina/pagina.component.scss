@@ -1,0 +1,70 @@
+div.pagina {
+    padding: 20px;
+    max-width: 65vw;
+    min-width: 250px;
+    margin: auto;
+    img {
+        width: 50%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    div.conteudo {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        div.textos {
+            min-width: 300px;
+            margin-right: 20px;
+            flex: 1;
+            text-align: justify;
+        }
+
+        div.botoes {
+            min-width: 300px;
+            
+            div {
+                display: flex;
+                flex-flow: column;
+                button {
+                    margin-bottom: 1rem;
+                    border-radius: 5px;
+                    // padding: 20px;
+                    cursor: pointer;
+                    outline: none;
+                    border: none;
+                    color: white;
+    
+                    &:first-child {
+                        background-color: #EA4335;
+                        &:hover {
+                            background-color: darken(#EA4335, 5);
+                        }
+                    }
+    
+                    &:nth-child(2) {
+                        background-color: #4285F4;
+                        &:hover {
+                            background-color: darken(#4285F4, 5);
+                        }
+                    }
+    
+                    &:nth-child(3) {
+                        background-color: #FBBC05;
+                        &:hover {
+                            background-color: darken(#FBBC05, 5);
+                        }
+                    }
+    
+                    &:last-child {
+                        background-color: #34A853;
+                        &:hover {
+                            background-color: darken(#34A853, 5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
